@@ -17,7 +17,8 @@ html {
   scroll-behavior: smooth;
 }
 
-button, hr {
+button,
+hr {
   border: none;
 }
 
@@ -43,7 +44,8 @@ h2 {
   color: #ade5ff;
 }
 
-p, li {
+p,
+li {
   color: #f0f0f0;
 }
 
@@ -501,6 +503,15 @@ p, li {
     opacity: 1;
     visibility: visible;
   }
+
+  .card__img {
+    max-height: 12rem;
+    max-width: 20rem;
+  }
+
+  .card__title {
+    padding-top: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -530,11 +541,6 @@ p, li {
   }
   body .footer__contact--link .icon {
     font-size: 10px;
-  }
-
-  .card__img {
-    max-height: 13rem;
-    max-width: 20rem;
   }
 }
 

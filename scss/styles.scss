@@ -20,7 +20,8 @@ html {
     scroll-behavior: smooth;
 }
 
-button, hr {
+button,
+hr {
     border: none;
 }
 
@@ -46,7 +47,8 @@ h2 {
     color: $celeste-color;
 }
 
-p, li {
+p,
+li {
     color: $font-color;
 }
 
@@ -92,7 +94,6 @@ p, li {
         }
     }
 }
-
 
 /*--------------------------Welcome---------------------*/
 
@@ -286,7 +287,6 @@ p, li {
     }
 }
 
-
 /*--------------------------Footer---------------------*/
 
 .footer {
@@ -324,7 +324,6 @@ p, li {
     }
 }
 
-
 /*--------------------------Ciclos---------------------*/
 
 @for $i from 1 to $limit {
@@ -338,7 +337,6 @@ p, li {
         padding: $i * $unit 0;
     }
 }
-
 
 /*--------------------------Media---------------------*/
 
@@ -424,6 +422,13 @@ p, li {
         opacity: 1;
         visibility: visible;
     }
+    .card__img {
+        max-height: 12rem;
+        max-width: 20rem;
+    }
+    .card__title {
+        padding-top: 1rem;
+    }
 }
 
 @media screen and (max-width: map-get($breakpoints, "normal")) {
@@ -457,9 +462,4 @@ p, li {
             }
         }
     }
-    .card__img {
-            max-height: 13rem;
-            max-width: 20rem;
-    }
 }
-
